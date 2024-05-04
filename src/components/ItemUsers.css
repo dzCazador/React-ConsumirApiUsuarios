@@ -1,0 +1,102 @@
+.user-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.user-item td {
+  padding: 8px 12px;
+}
+
+.user-item td:last-child {
+  white-space: nowrap;
+}
+
+.action-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  color: #007bff;
+}
+.custom-modal-content {
+  background-color: #fff; /* Color de fondo del modal */
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333; /* Color del texto del encabezado */
+}
+
+.close-button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #999; /* Color del botón de cerrar */
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555; /* Color del texto de la etiqueta */
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-button,
+.save-button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #ccc; /* Color del botón Cancel */
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: #007bff; /* Color del botón Save Changes */
+  color: #fff;
+}
+
+.save-button:hover {
+  background-color: #0056b3; /* Color del botón Save Changes al pasar el ratón */
+}
+
