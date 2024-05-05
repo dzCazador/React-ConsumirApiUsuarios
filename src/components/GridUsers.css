@@ -35,3 +35,10 @@
 .action-button:hover {
   color: #007bff;
 }
+
+.add-user-button-container {
+  margin-bottom: 20px; /* Espacio entre el botón y la tabla */
+  float: left; /* Alinea el botón a la izquierda */
+  margin-bottom: 10px; /* Espacio entre el botón y la tabla */
+  margin-right: 10px; /* Espacio entre el botón y el borde izquierdo */
+}

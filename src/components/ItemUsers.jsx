@@ -4,7 +4,7 @@ import { faTrashAlt, faEdit } from '@fortawesome/free-solid-svg-icons';
 import Modal from 'react-modal';
 import './ItemUsers.css';
 
-const ItemUsers = ({ user }) => {
+function ItemUsers ({user, handleItemClick, isSelected })   {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [deleteModalIsOpen, setDeleteModalIsOpen] = useState(false);
 
@@ -31,7 +31,7 @@ const ItemUsers = ({ user }) => {
   };
 
   return (
-    <tr className="user-item">
+    <tr className={`${isSelected ? 'user-item.selected' : 'user-item'}`} onClick={handleItemClick}>
       <td>{user.username}</td>
       <td>{user.email}</td>
       <td>{user.nombre}</td>
@@ -43,7 +43,7 @@ const ItemUsers = ({ user }) => {
         <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        contentLabel="Edit User Modal"
+        contentLabel="Editar Usuario"
         style={{
           overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -64,7 +64,7 @@ const ItemUsers = ({ user }) => {
         contentClassName="custom-modal-content"
       >
         <div className="modal-header">
-          <h2>Edit User</h2>
+          <h2>Editar Usuario</h2>
           <button className="close-button" onClick={closeModal}>
             &times;
           </button>
@@ -122,6 +122,7 @@ const ItemUsers = ({ user }) => {
               flexDirection: 'column',
               alignItems: 'center', // Centra horizontalmente
               justifyContent: 'center', // Centra verticalment
+              
             },
           }}>
           <div>

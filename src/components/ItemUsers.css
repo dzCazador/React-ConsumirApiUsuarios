@@ -2,6 +2,15 @@
   border-bottom: 1px solid #ccc;
 }
 
+.user-item.selected {
+  background-color: #007bff; /* Cambia el color de fondo cuando la fila está seleccionada */
+  color: white; /* Cambia el color del texto cuando la fila está seleccionada */
+}
+
+.user-item.selected:hover {
+  background-color: #0056b3; /* Cambia el color de fondo cuando la fila está seleccionada y se hace hover */
+}
+
 .user-item td {
   padding: 8px 12px;
 }
